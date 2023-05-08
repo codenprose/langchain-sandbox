@@ -1,2 +1,3 @@
 # langchain-sandbox
-A TypeScript sandbox for LangChain experiments
+
+A TypeScript sandbox for LangChain experiments.
