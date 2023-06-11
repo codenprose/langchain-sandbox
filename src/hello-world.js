@@ -15,6 +15,8 @@ const llmChain = new LLMChain({
   prompt,
   llm: model,
 })
-const res = await llmChain.run(question);
+// const res = await llmChain.run(question);
+// console.log(res); // Answer: "Product Creation Mastery"
 
-console.log(res); // Answer: "Product Creation Mastery"
+const res = await llmChain.call({ question })
+console.log(res) // { text: '\n\nAnswer: Creative Product Builder Bootcamp' }
